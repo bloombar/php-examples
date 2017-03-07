@@ -1,0 +1,27 @@
+div.container {
+	width: 860px;
+	margin: 0 auto;
+	border: 1px dotted red;
+	background-color: yellow;
+	padding: 20px;
+	font-family: 'Century Gothic', sans-serif;
+	text-align: left;
+}
+li {
+	font-size: 22px;
+}
+li.done span.task {
+	text-decoration: line-through;
+}
+
+a.action {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a.delete {
+	color: red;
+}
+a.done {
+	color: green;
+}

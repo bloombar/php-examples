@@ -1,0 +1,38 @@
+div#container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: yellow;
+	box-shadow: 10px 0 0 #red;
+	padding: 10px;
+	font-family: helvetica;
+	color: #505050;
+}
+
+article {
+	border: 1px solid lightgray;
+	border-bottom: 0px;
+	padding: 10px;
+}
+
+article p {
+	position: relative;
+	top: 20px;
+	color: #a0a0a0;
+}
+
+input[name="tweet"] {
+	width: 80%;
+	border: 1px solid #505050;
+	padding: 5px;
+	font-size: 24px;
+}
+
+form {
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	padding: 10px;
+}
+
+p.num_results {
+	padding: 10px;
+}

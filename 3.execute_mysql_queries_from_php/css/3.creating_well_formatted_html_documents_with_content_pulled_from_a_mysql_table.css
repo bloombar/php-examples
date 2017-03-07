@@ -1,0 +1,40 @@
+/**
+* a little fun with CSS
+**/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+div.container {
+	width: 70%;
+	padding: 10%;
+	margin: 5% auto;
+	background-color: red;
+	color: white;
+	text-align: center;
+	-ms-transform: rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+	transform: rotate(5deg);
+}
+
+h1 {
+	font-family: geneva, serif;
+	text-transform: uppercase;
+}
+
+article {
+	width: 23%;
+	height: 160px;
+	border: 1px solid white;
+	float: left;
+	margin: 5%;
+	-ms-transform: rotate(-5deg); /* IE 9 */
+	-webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+	transform: rotate(-5deg);
+}

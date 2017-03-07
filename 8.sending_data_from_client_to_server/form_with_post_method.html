@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Example</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Using a Form to initiate an HTTP POST request</h1>
+			<p>
+				Note that the value of the form tag's "action" attribute tells the browser what page to request from the server once the user clicks submit.
+			</p>
+			<p>
+				Submitting this form initates an HTTP POST request to the server, since the form tag's "method" attribute is set to the value "POST"
+			</p>
+
+			<form action="process_post_request.php" method="POST">
+				<label>Please enter a search term:</label>
+				<input type="text" name="q" />
+				<input type="submit" value="Go!" />
+			</form>
+		</div>
+	</body>
+</html>

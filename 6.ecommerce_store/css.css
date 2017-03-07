@@ -1,0 +1,38 @@
+div.container {
+	width: 880px;
+	margin: 0 auto;
+	border: 1px solid red;
+	background-color: yellow;
+	padding: 10px;
+}
+
+article {
+	position: relative;
+	width: 248px;
+	height: 228px;
+	margin: 10px;
+	border: 1px solid red;
+	padding: 10px;
+	float: left;
+}
+
+input[type="submit"] {
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	background-color: white;
+	border: 1px solid red;
+	padding: 20px;
+	font-size: 24px;
+	display: block;
+	margin: 0 auto;
+}
+
+div.clear {
+	clear: both;
+}
+
+
+
+
+
