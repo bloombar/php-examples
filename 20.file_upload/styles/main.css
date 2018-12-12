@@ -1,0 +1,6 @@
+div#container {
+	margin: 40px auto;
+	width: 600px;
+	border: 4px dotted #c0c0c0;
+	padding: 20px 40px;
+}

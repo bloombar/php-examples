@@ -1,0 +1,6 @@
+Options +Indexes +MultiViews +FollowSymlinks 
+
+RewriteEngine on
+
+RewriteRule ^about/staff$ aboutstaff.html [QSA]
+RewriteRule ^about/staff/$ aboutstaff.html [QSA]

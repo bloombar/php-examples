@@ -1,0 +1,6 @@
+pre {
+	width: 500px;
+	padding: 2em;
+	background-color: #f0f0f0;
+	border: 1px solid #a0a0a0;
+}

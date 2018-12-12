@@ -1,0 +1,35 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+#first, rewrite the base URL for this document so that all rewritten URLs in this doc are relative to this:
+RewriteBase /amosbloomberg/spring2010/class10/mod_rewrite/
+
+#convert all requests for .html or .htm files to .php file requests
+#for example, a request for index.html will redirect to index.php
+#RewriteRule ^(.*)\.html $1.php
+
+#CLIENT SIDE REDIRECTS
+#to tell the browser to redirect from the requested page to another page, follow the rule with [R]
+#the client is informed of this redirect, so the new URL will show up in the browser location bar
+RewriteRule ^an-easy-client-side-redirect$ index.php [R]
+
+#SERVER SIDE REDIRECTS
+#the [QSA] switch at the end of any Rewrite rule indicates that any query string data in the original URL will be automatically passed along untouched to the redirected URL
+#using a [NC] switch indicates that URLs are case-insensitive, so capitals or lowercase make no difference
+#you can combine switches with a comma dilimiter: for example [R, NC, QSA]
+
+#the following slick rewrite rewrites from a fake URL to a real URL with query string attached
+#the browser will only ever see the fake URL, and has no knowledge that the content is really coming from another URL
+RewriteRule ^a-slick-server-side-rewrite$ index.php [QSA]
+RewriteRule ^a-slick-server-side-rewrite-with-query-string$ index.php?slick_rewrite_worked=true [QSA]
+
+#the following shows how to do permalinks using mod_rewrite
+#a url with the format /2009_05_05_archive.html will rewrite to index.html with the date submitted in the query string
+RewriteRule ^([0-9]+)_([0-9]+)_([0-9]+)_archive.html$ index.php?year=$1&month=$2&day=$3 [QSA]
+
+#another example of permalink style:
+#this one takes URLs like /2009/05/05/archive.html
+RewriteRule ^([0-9]+)/([0-9]+)/([0-9]+)/archive.html$ index.php?year=$1&month=$2&day=$3 [QSA]
+
+#this redirect converts numerical data in the URL to variables in a query string
+RewriteRule ^article/([0-9]+)$ index.php?article_id=$1 [QSA]

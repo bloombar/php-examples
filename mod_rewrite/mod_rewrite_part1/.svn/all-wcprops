@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/webdev/!svn/ver/2/trunk/class10/mod_rewrite
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/webdev/!svn/ver/2/trunk/class10/mod_rewrite/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/webdev/!svn/ver/2/trunk/class10/mod_rewrite/index.php
+END

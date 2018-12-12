@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>File Upload Example</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css" />
+	</head>
+	<body>
+		<div id="container">
+		
+			<h1>File Upload Example</h1>
+			<p>Please upload an image:</p>
+		
+			<form action="process_file.php" method="POST" enctype="multipart/form-data">
+				<input type="file" name="uploadfile">
+				<br /><br />
+				<input type="submit" value="Upload!">
+			</form>
+			
+		</div><!-- end container -->
+	</body>
+</html>
